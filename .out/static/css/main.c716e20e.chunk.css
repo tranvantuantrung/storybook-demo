@@ -1,0 +1,41 @@
+.btn {
+  color: #eb6383 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #eb6383;
+}
+
+.btn:hover {
+  color: #b4f2e1 !important;
+  border: 1px solid #b4f2e1;
+}
+
+.card {
+  width: 20rem;
+}
+
+.cardTitle {
+  font-weight: 600;
+}
+
+.nav-bar {
+  background-color: #eb6383 !important;
+}
+
+.brand {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.navItem > a {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navItem > a:hover {
+  color: #b4f2e1 !important;
+}
+
+
+/*# sourceMappingURL=main.c716e20e.chunk.css.map*/
