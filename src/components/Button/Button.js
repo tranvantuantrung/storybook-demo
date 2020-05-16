@@ -4,17 +4,15 @@ import { Button } from 'reactstrap';
 
 import './Button.css';
 
-class ButtonPrimary extends React.Component {
-  render() {
-    const { title } = this.props;
-    return (
-      <div className="ButtonPrimary">
-        <Button className="btn" color="primary">
-          {title}
-        </Button>
-      </div>
-    );
-  }
+function ButtonPrimary(props) {
+  const { title } = props;
+  return (
+    <div className="ButtonPrimary">
+      <Button className="btn" color="primary">
+        {title}
+      </Button>
+    </div>
+  );
 }
 
 ButtonPrimary.propTypes = {

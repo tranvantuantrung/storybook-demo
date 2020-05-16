@@ -5,22 +5,20 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import Button from '../Button/Button';
 import './Card.css';
 
-class CardPrimary extends React.Component {
-  render() {
-    const { imageUrl, title, description, buttonName } = this.props;
-    return (
-      <div className="CardPrimary">
-        <Card className="card">
-          <CardImg top width="100%" src={imageUrl} alt="image alt" />
-          <CardBody>
-            <CardTitle className="cardTitle">{title}</CardTitle>
-            <CardText>{description}</CardText>
-            <Button title={buttonName} />
-          </CardBody>
-        </Card>
-      </div>
-    );
-  }
+function CardPrimary(props) {
+  const { imageUrl, title, description, buttonName } = props;
+  return (
+    <div className="CardPrimary">
+      <Card className="card">
+        <CardImg top width="100%" src={imageUrl} alt="image alt" />
+        <CardBody>
+          <CardTitle className="cardTitle">{title}</CardTitle>
+          <CardText>{description}</CardText>
+          <Button title={buttonName} />
+        </CardBody>
+      </Card>
+    </div>
+  );
 }
 
 CardPrimary.defaultProps = {
